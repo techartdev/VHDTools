@@ -1,5 +1,7 @@
 # VHDTools
 
+![Nuget](https://img.shields.io/nuget/v/VHDTools)
+
 Provides functionality for managing disk operations, including virtual disks and attached physical drives.
 
 ## Introduction
