@@ -369,3 +369,8 @@ volume.RemoveLetter();
 // Get all volumes for physical drive number 0 
 var volumes = Volume.GetVolumesOnPhysicalDrive(0);
 ```
+
+## Contact
+Visit https://scrapeweb.site
+
+Or join the **Web Scraping and Automation** community on Discord: https://discord.gg/f3EfBQamnT
