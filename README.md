@@ -374,3 +374,12 @@ var volumes = Volume.GetVolumesOnPhysicalDrive(0);
 Visit https://scrapeweb.site
 
 Or join the **Web Scraping and Automation** community on Discord: https://discord.gg/f3EfBQamnT
+
+---
+
+If you find this app helpful and would like to support the development of more tools and projects, consider buying me a coffee. Your support is greatly appreciated!
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/techartdev)
+
+Thank you for your support!
+
