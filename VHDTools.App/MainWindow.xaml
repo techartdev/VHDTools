@@ -2,9 +2,15 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
         Title="VHD Tools" Height="450" Width="800"
         Style="{StaticResource MaterialDesignWindow}">
-    <Grid>
-        <TextBlock Text="Welcome to VHD Tools" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
-    </Grid>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left" Width="160" Background="{DynamicResource MaterialDesignPaper}">
+            <Button Content="Home" Command="{Binding NavigateCommand}" CommandParameter="HomeView" Margin="8"/>
+            <Button Content="Settings" Command="{Binding NavigateCommand}" CommandParameter="SettingsView" Margin="8"/>
+        </StackPanel>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+    </DockPanel>
 </Window>
