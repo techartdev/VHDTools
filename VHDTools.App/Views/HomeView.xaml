@@ -1,0 +1,16 @@
+<UserControl x:Class="VHDTools.App.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <StackPanel Margin="16">
+        <TextBox Text="{Binding VhdPath}" Width="300" materialDesign:HintAssist.Hint="VHD Path" Margin="0,0,0,8"/>
+        <TextBox Text="{Binding VhdSize}" Width="150" materialDesign:HintAssist.Hint="Size (MB)" Margin="0,0,0,8"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Create" Command="{Binding CreateVhdCommand}" Margin="0,0,8,0"/>
+            <Button Content="Attach" Command="{Binding AttachVhdCommand}" Margin="0,0,8,0"/>
+            <Button Content="Detach" Command="{Binding DetachVhdCommand}"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

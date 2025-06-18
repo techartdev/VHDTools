@@ -10,6 +10,11 @@ namespace VHDTools.App
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterSingleton<Services.IDiskService, Services.DiskService>();
+            containerRegistry.RegisterSingleton<Services.ISettingsService, Services.SettingsService>();
+
+            containerRegistry.RegisterForNavigation<Views.HomeView>();
+            containerRegistry.RegisterForNavigation<Views.SettingsView>();
         }
     }
 }
